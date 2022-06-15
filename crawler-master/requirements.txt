@@ -1,0 +1,14 @@
+AMQPStorm==2.7.2
+certifi==2019.11.28
+chardet==3.0.4
+dnspython==2.0.0
+elasticsearch==7.5.1
+idna==2.9
+mrfh==0.0.1
+pamqp==2.3.0
+psycopg2-binary
+python-dotenv==0.12.0
+python-json-logger==0.1.11
+requests==2.23.0
+urllib3==1.25.8
+git+ssh://git@gitlab.com/grtid/pymq.git

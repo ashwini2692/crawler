@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  splash:
+    image: "scrapinghub/splash"
+    ports:
+      - "8050:8050"
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    volumes:
+      - ./.docker/rabbitmq/data/:/var/lib/rabbitmq/
+      - ./.docker/rabbitmq/logs/:/var/log/rabbitmq/
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "test"
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+      RABBITMQ_DEFAULT_VHOST: /
+    ports:
+      - 5672:5672
+      - 15672:15672
