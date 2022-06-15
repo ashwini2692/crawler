@@ -1,0 +1,2 @@
+AMQPStorm==2.7.2
+pamqp==2.3.0
